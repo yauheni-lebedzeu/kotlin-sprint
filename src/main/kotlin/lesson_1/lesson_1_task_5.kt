@@ -11,16 +11,8 @@ fun main() {
     val minutes = fullMinutes % MINUTES_IN_HOUR
     val seconds = secondsInSpace % SECONDS_IN_MINUTES
 
-    val hourString = getTimeUnitString(hours)
-    val minutesString = getTimeUnitString(minutes)
-    val secondsString = getTimeUnitString(seconds)
-
-    val resultTimeString = String.format("%s:%s:%s", hourString, minutesString, secondsString)
+    val resultTimeString = String.format("%02d:%02d:%02d", hours, minutes, seconds)
 
     println(resultTimeString)
 
-}
-
-private fun getTimeUnitString(timeUnitValue: Int): String {
-    return if (timeUnitValue < 10) "0$timeUnitValue" else timeUnitValue.toString()
 }
