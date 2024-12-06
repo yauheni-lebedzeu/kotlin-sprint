@@ -10,7 +10,7 @@ fun main() {
     val countOfStudents = 4
 
     val avgScore =
-        (firstStudentScore + secondStudentScore + thirdStudentScore + forthStudentScore) / countOfStudents.toFloat()
+        firstStudentScore + secondStudentScore + thirdStudentScore + forthStudentScore / countOfStudents.toFloat()
 
     val roundedAvgScore = String.format("%.2f", avgScore)
 
