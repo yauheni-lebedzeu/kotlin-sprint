@@ -1,14 +1,15 @@
 package com.lemot.lesson_2
 
-private const val BUFF_PERCENTAGE = 20
+private const val PERCENTAGE_DIVIDER = 100f
 
 fun main() {
 
     val cristalOreQuantity = 7
     val ironOreQuantity = 11
+    val buffPercents = 20
 
-    val cristalOreBonus = (cristalOreQuantity * (BUFF_PERCENTAGE / 100f)).toInt()
-    val ironOreBonus = (ironOreQuantity * (BUFF_PERCENTAGE / 100f)).toInt()
+    val cristalOreBonus = (cristalOreQuantity * (buffPercents / PERCENTAGE_DIVIDER)).toInt()
+    val ironOreBonus = (ironOreQuantity * (buffPercents / PERCENTAGE_DIVIDER)).toInt()
 
     println("Бонус кристаллической руды: $cristalOreBonus")
     println("Бонус железной руды: $ironOreBonus")
