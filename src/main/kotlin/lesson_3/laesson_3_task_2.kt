@@ -2,13 +2,16 @@ package com.lemot.lesson_3
 
 fun main() {
 
-    val lastName = "Сидорова"
+    var lastName = "Андреева"
     val firstName = "Татьяна"
     val patronymic = "Сергеевна"
-    val maidenName = "Андреева"
-    val ageOfMarriage = 22
+    var age = 20
 
-    println("$maidenName $firstName $patronymic, ${ageOfMarriage - 2}")
-    println("$lastName $firstName $patronymic, $ageOfMarriage")
+    println("$lastName $firstName $patronymic, $age")
+
+    lastName = "Сидорова"
+    age += 2
+
+    println("$lastName $firstName $patronymic, $age")
 
 }
