@@ -4,9 +4,11 @@ fun main() {
 
     val moveMessageString = "D2-D4;0"
 
-    val fromPosition = moveMessageString.substring(0, 2)
-    val toPosition = moveMessageString.substring(3, 5)
-    val moveNumber = moveMessageString.substring(6)
+    val messageElements = moveMessageString.split('-', ';')
+
+    val fromPosition = messageElements[0]
+    val toPosition = messageElements[1]
+    val moveNumber = messageElements[2]
 
     println(fromPosition)
     println(toPosition)
