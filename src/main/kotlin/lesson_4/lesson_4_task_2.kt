@@ -6,20 +6,20 @@ fun main() {
     val maxWeight = 100
     val maxVolume = 120
 
-    val firstLoadWeight = 20
-    val firstLoadVolume = 80
+    val firstCargoWeight = 20
+    val firstCargoVolume = 80
 
     println(
-        "Груз с весом $firstLoadWeight кг и объемом $firstLoadVolume л соответствует категории 'Average': " +
-                "${firstLoadWeight > minWeight && firstLoadWeight <= maxWeight && firstLoadVolume < maxVolume}"
+        "Груз с весом $firstCargoWeight кг и объемом $firstCargoVolume л соответствует категории 'Average': " +
+                "${firstCargoWeight > minWeight && firstCargoWeight <= maxWeight && firstCargoVolume < maxVolume}"
     )
 
-    val secondLoadWeight = 50
-    val secondLoadVolume = 100
+    val secondCargoWeight = 50
+    val secondCargoVolume = 100
 
     println(
-        "Груз с весом $secondLoadWeight кг и объемом $secondLoadVolume л соответствует категории 'Average': " +
-                "${secondLoadWeight > minWeight && secondLoadWeight <= maxWeight && secondLoadVolume < maxVolume}"
+        "Груз с весом $secondCargoWeight кг и объемом $secondCargoVolume л соответствует категории 'Average': " +
+                "${secondCargoWeight > minWeight && secondCargoWeight <= maxWeight && secondCargoVolume < maxVolume}"
     )
 
 }
