@@ -1,17 +1,17 @@
 package com.lemot.lesson_4
 
-fun main() {
+private const val MIN_WEIGHT = 35
+private const val MAX_WEIGHT = 100
+private const val MAX_VOLUME = 120
 
-    val minWeight = 35
-    val maxWeight = 100
-    val maxVolume = 120
+fun main() {
 
     val firstCargoWeight = 20
     val firstCargoVolume = 80
 
     println(
         "Груз с весом $firstCargoWeight кг и объемом $firstCargoVolume л соответствует категории 'Average': " +
-                "${firstCargoWeight > minWeight && firstCargoWeight <= maxWeight && firstCargoVolume < maxVolume}"
+                "${firstCargoWeight > MIN_WEIGHT && firstCargoWeight <= MAX_WEIGHT && firstCargoVolume < MAX_VOLUME}"
     )
 
     val secondCargoWeight = 50
@@ -19,7 +19,7 @@ fun main() {
 
     println(
         "Груз с весом $secondCargoWeight кг и объемом $secondCargoVolume л соответствует категории 'Average': " +
-                "${secondCargoWeight > minWeight && secondCargoWeight <= maxWeight && secondCargoVolume < maxVolume}"
+                "${secondCargoWeight > MIN_WEIGHT && secondCargoWeight <= MAX_WEIGHT && secondCargoVolume < MAX_VOLUME}"
     )
 
 }
