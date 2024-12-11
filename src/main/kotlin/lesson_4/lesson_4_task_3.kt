@@ -1,13 +1,17 @@
 package com.lemot.lesson_4
 
+private const val FAVORABLE_HUMID = 20
+private const val NOT_FAVORABLE_SEASON = "Winter"
+
 fun main() {
 
     val isSunnyWeather = true
-    val isTentOpen = true
-    val humid = 20
-    val season = "Winter"
+    val isTentOpened = true
+    val currentHumid = 20
+    val currentSeason = "Winter"
 
-    val isConditionsFavorable = isSunnyWeather && isTentOpen && humid == 20 && season != "Winter"
+    val isConditionsFavorable =
+        isSunnyWeather && isTentOpened && currentHumid == FAVORABLE_HUMID && currentSeason != NOT_FAVORABLE_SEASON
 
     println("Благоприятные ли условия для роста бобовых? $isConditionsFavorable")
 
