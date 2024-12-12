@@ -1,13 +1,14 @@
 package com.lemot.lesson_5
 
-import kotlin.random.Random
-
-private const val UPPER_BOUND_OF_SUMMANDS = 100
+private const val LOWER_BOUND_OF_SUMMANDS = 1
+private const val UPPER_BOUND_OF_SUMMANDS = 10
 
 fun main() {
 
-    val firsRandomInteger = Random.nextInt(UPPER_BOUND_OF_SUMMANDS)
-    val secondRandomInteger = Random.nextInt(UPPER_BOUND_OF_SUMMANDS)
+    val intRange = LOWER_BOUND_OF_SUMMANDS..UPPER_BOUND_OF_SUMMANDS
+
+    val firsRandomInteger = intRange.random()
+    val secondRandomInteger = intRange.random()
 
     print("Введите сумму двух чисел '$firsRandomInteger' и '$secondRandomInteger', чтобы понять не бот ли вы: ")
 
