@@ -5,7 +5,7 @@ private const val SECOND_WINNING_NUMBER = 23
 
 fun main() {
 
-    println("Угадай пару чисел и получи приз!")
+    println("Угадай пару чисел от 0 до 42 и получи приз!")
 
     print("Введите первое число: ")
     val firstPlayerNumber = readln().toIntOrNull()
