@@ -4,8 +4,8 @@ fun main() {
 
     val trainingDayNumber = 5
 
-    val isUnevenTraining = trainingDayNumber % 2 > 0
     val isEvenTraining = trainingDayNumber % 2 == 0
+    val isUnevenTraining = !isEvenTraining
 
     println(
         """
